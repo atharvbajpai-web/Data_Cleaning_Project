@@ -1,29 +1,180 @@
-Python-Data-Cleaning
-A collection of Python-based data cleaning projects. Each project demonstrates essential techniques for preparing raw data for analysis and modeling.
+# 🐍 Python Data Cleaning Project
 
-Introduction
-This repository contains Python-based data cleaning project that demonstrates key steps and best practices for preparing raw data for analysis or modeling. The projects here cover various aspects of data cleaning, such as handling missing values, duplicates, outliers, and ensuring data consistency.
+A collection of **Python-based data cleaning project** focused on transforming raw and inconsistent datasets into clean, structured, analysis-ready data.
 
-Project : Cafe Sales
-Overview
-This project focuses on cleaning a dataset related to cafe sales. The dataset contains information about transactions, including the quantity of items sold, the price per unit, and the total spent.
+This project demonstrates practical data-cleaning techniques commonly used by data analysts, including **missing-value treatment, data-type correction, duplicate removal, data validation, and feature engineering**.
 
-Steps Taken
-Inspecting the Data: The dataset is loaded and inspected for structure, datatypes, and basic statistics.
-Handling Missing Values: Missing values in certain columns (Payment Method, Location, Item) are filled with appropriate values to prevent data loss.
-Data Type Corrections: Columns with incorrect data types are converted to appropriate types for analysis.
-Handling Duplicates: Duplicate records are removed from the dataset to ensure data integrity.
-Feature Engineering: Missing values in Price Per Unit and Total Spent are imputed based on logical relationships between columns (e.g., calculating Total Spent as the product of Quantity and Price Per Unit).
+---
 
-Files Included
-Cafe Sales Project (Cafe Sales.ipynb)
-This file contains the code for cleaning the cafe sales data.
-Dataset: Cafe Sales.csv:
+## 📌 Project: Cafe Sales Data Cleaning
 
-How to Use
-Clone the repository to your local machine.
-Make sure you have Python 3.x installed along with the necessary libraries: numpy, pandas.
-Run the .ipynb files in Jupyter Notebook or any other compatible Python environment.
-Load the datasets (Cafe Sales.csv and Customer Care.csv) and follow the steps to clean the data.
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+### 📖 Overview
+
+This project focuses on cleaning and preparing a **Cafe Sales dataset** containing transaction-level information such as items purchased, quantity, price per unit, payment method, location, and total amount spent.
+
+The goal is to transform messy raw data into a **reliable and analysis-ready dataset** while preserving as much valid information as possible.
+
+---
+
+## 🎯 Objectives
+
+* Understand the structure and quality of the raw dataset
+* Identify missing and inconsistent values
+* Correct incorrect data types
+* Remove duplicate records
+* Handle missing values using logical approaches
+* Validate relationships between columns
+* Create derived values where appropriate
+* Prepare the dataset for further analysis
+
+---
+
+## 🛠️ Data Cleaning Process
+
+### 1. Data Inspection
+
+* Loaded the dataset using **Pandas**
+* Checked the number of rows and columns
+* Examined column names and data types
+* Generated basic descriptive statistics
+* Identified missing and inconsistent values
+
+### 2. Handling Missing Values
+
+Missing values were identified and treated based on the nature of each column.
+
+Examples include:
+
+* `Payment Method`
+* `Location`
+* `Item`
+* `Price Per Unit`
+* `Total Spent`
+
+Rather than blindly deleting rows, logical methods were used wherever possible to preserve useful records.
+
+### 3. Data Type Correction
+
+Columns containing incorrect or inconsistent data types were converted into appropriate formats to make them suitable for analysis.
+
+### 4. Duplicate Removal
+
+Duplicate records were identified and removed to improve **data integrity and reliability**.
+
+### 5. Feature Engineering
+
+Logical relationships between columns were used to derive or validate values.
+
+For example:
+
+```text
+Total Spent = Quantity × Price Per Unit
+```
+
+This relationship was used to handle missing values and validate existing transaction data.
+
+### 6. Data Validation
+
+The cleaned dataset was checked for:
+
+* Remaining missing values
+* Duplicate records
+* Invalid data types
+* Inconsistent values
+* Logical inconsistencies between related columns
+
+---
+
+## 📂 Project Structure
+
+```text
+Python-Data-Cleaning/
+│
+├── Cafe Sales/
+│   ├── Cafe Sales.ipynb
+│   └── Cafe Sales.csv
+│
+├── README.md
+└── LICENSE
+```
+
+---
+
+## 📁 Files Included
+
+### `Cafe Sales.ipynb`
+
+Jupyter Notebook containing the complete Python data-cleaning process.
+
+### `Cafe Sales.csv`
+
+Raw dataset used for the project.
+
+---
+
+## 🧰 Tools & Technologies
+
+* **Python**
+* **Pandas**
+* **NumPy**
+* **Jupyter Notebook**
+
+---
+
+## ▶️ How to Run the Project
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repository-url>
+```
+
+### 2. Install the required libraries
+
+```bash
+pip install pandas numpy jupyter
+```
+
+### 3. Open Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+### 4. Open
+
+```text
+Cafe Sales.ipynb
+```
+
+and run the notebook cells sequentially.
+
+---
+
+## 💡 Key Skills Demonstrated
+
+This project demonstrates practical experience with:
+
+* Data Exploration
+* Data Cleaning
+* Missing Value Treatment
+* Duplicate Detection & Removal
+* Data Type Conversion
+* Data Validation
+* Feature Engineering
+* Pandas
+* NumPy
+* Jupyter Notebook
+
+
+
+## 👤 Author
+
+**Atharv**
+
+Aspiring Data Analyst | Python | SQL | Power BI
+
+---
+
+
+
